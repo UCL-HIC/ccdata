@@ -12,7 +12,7 @@ fulldb: `r dbfull`
 
     
 ```{r, echo=FALSE, warning=FALSE}
-item2d <- c("h_rate", "bp_m_a", "bp_sys_a", "lactate_abg", "bilirubin",
+val <- c("h_rate", "bp_m_a", "bp_sys_a", "lactate_abg", "bilirubin",
             "fluid_balance_h", "pao2_abg")
 
 new.config <- function(items) {
@@ -21,7 +21,7 @@ new.config <- function(items) {
     conf
 }
 
-cctb <- create.cctable(ccd, conf=new.config(item2d), freq=1)$torigin
+cctb <- create.cctable(ccd, conf=new.config(val), freq=1)$torigin
 
 suppressWarnings(library(pander))
 panderOptions("digits", 2) 
@@ -99,6 +99,6 @@ demg.distribution(demg, c("HCM", "apache_score"))
 
 ## Physiological & Drugs
 ```{r, echo=FALSE, results="asis", warning=FALSE}
-physio.distribution(cctb, item2d)
+physio.distribution(cctb, val)
 ```
 

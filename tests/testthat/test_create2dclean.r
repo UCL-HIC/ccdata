@@ -2,7 +2,7 @@ context("Testing create2dclean")
 
 pseudoepisode <- function(n) {
     ep <- list(NIHR_HIC_ICU_0108=data.frame(time=as.numeric(seq(10)), 
-                                      item2d=seq(81, 90)), 
+                                      val=seq(81, 90)), 
          NIHR_HIC_ICU_0002="site_i", 
          NIHR_HIC_ICU_0005="episode_i"
          )

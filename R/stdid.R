@@ -109,10 +109,20 @@ which.classification <- function(item_name) {
 #' category.
 #' @param item_name character the NHIC code or the short name
 #' @return logical
-#' @export is.demographic
-is.demographic <- function(item_name) {
+#' @export is.demographics
+is.demographics<- function(item_name) {
     return(which.classification(item_name) == "Demographic")
 }
+
+#' Check if the items NHIC code or short names belong is longitudinal.
+#' @export 
+is.longitudinal <- function(item_name) {
+    long <- !sapply(item_name, is.demographics)
+    names(long) <- item_name
+    return(long)
+}
+
+
 
 
 #' Check if the item NHIC code or short name belongs to the physiology

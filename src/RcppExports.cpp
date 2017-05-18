@@ -18,3 +18,17 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// reallocateTime__
+DataFrame reallocateTime__(DataFrame d, const float t_admission, const float t_discharge, const float frequency);
+RcppExport SEXP cleanEHR_reallocateTime__(SEXP dSEXP, SEXP t_admissionSEXP, SEXP t_dischargeSEXP, SEXP frequencySEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< DataFrame >::type d(dSEXP);
+    Rcpp::traits::input_parameter< const float >::type t_admission(t_admissionSEXP);
+    Rcpp::traits::input_parameter< const float >::type t_discharge(t_dischargeSEXP);
+    Rcpp::traits::input_parameter< const float >::type frequency(frequencySEXP);
+    rcpp_result_gen = Rcpp::wrap(reallocateTime__(d, t_admission, t_discharge, frequency));
+    return rcpp_result_gen;
+END_RCPP
+}

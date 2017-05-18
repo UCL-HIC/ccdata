@@ -2,7 +2,7 @@ context("Testing reallocate time variables")
 
 test_that("unit test with data from 1-10",
 {
-   data <- data.frame(item2d=as.character(seq(10)), 
+   data <- data.frame(val=as.character(seq(10)), 
                       time=as.numeric(seq(10)))
    data_new <- reallocateTime(data, 10, 1)
 
@@ -18,18 +18,18 @@ test_that("input and output data types",
     data <- data.frame(seq(10), seq(10))
     expect_error(reallocateTime(data, 10, 1))
 
-    data <- data.frame(item2d=seq(10), time=seq(10))
+    data <- data.frame(val=seq(10), time=seq(10))
     expect_error(reallocateTime(data, 10, 1))
     
-    data$item2d <- as.character(data$item2d)
+    data$val <- as.character(data$val)
     data$time <- as.character(data$time)
     expect_error(reallocateTime(data, 10, 1))
 
-    data$item2d <- as.numeric(data$item2d)
+    data$val <- as.numeric(data$val)
     data$time <- as.numeric(data$time)
     out <- reallocateTime(data, 10, 1)
 
-    data$item2d <- as.character(data$item2d)
+    data$val <- as.character(data$val)
     out <- reallocateTime(data, 10, .1)
 }) 
 
@@ -60,7 +60,7 @@ test_that("check when item t_admission or t_discharge is missing",
 
 test_that("check data with meta data column (C++ function)", {
     input <- data.frame(time=seq(1, 100, 10), 
-               item2d=rep("v", 10), 
+               val=rep("v", 10), 
                meta=rep("m", 10))
     output <- reallocateTime(input, 100, 1)
     # index increase by 1 

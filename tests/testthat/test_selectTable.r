@@ -2,13 +2,13 @@ context("Testing table selection")
 
 pseudoepisode <- function(n, with.meta=F) {
     ep <- list(NIHR_HIC_ICU_0108=data.frame(time=as.numeric(seq(0, 19)), 
-                                      item2d=rep(80, 20)), 
+                                      val=rep(80, 20)), 
          NIHR_HIC_ICU_0002="site_i", 
          NIHR_HIC_ICU_0005="episode_i"
          )
     if (with.meta)
         ep[["NIHR_HIC_ICU_0441"]] <- data.frame(time=as.numeric(seq(0, 9)), 
-                                                item2d=seq(10), 
+                                                val=seq(10), 
                                                 meta=rep("I", 10), 
                                                 stringsAsFactors=F)
     cr <- ccRecord()
@@ -16,9 +16,6 @@ pseudoepisode <- function(n, with.meta=F) {
         cr <- cr + new.episode(ep)
     cr
 }
-
-
-
 
 test_that("",{
     itemsToDataFrame(ccdt@episodes[[1]], "NIHR_HIC_ICU_0108", 2, 1)

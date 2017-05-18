@@ -4,7 +4,7 @@ test.record <- function(v, item) {
     cr <- ccRecord()
     for (i in seq(v)) {
         hr <- data.frame(time=as.numeric(seq(v[[i]])),
-                         item2d=as.character(v[[i]]))
+                         val=as.character(v[[i]]))
         lst <- list()
         lst[[item]] <- hr
         lst[[stname2code("ADNO")]] <- paste("episode_", i)
@@ -30,7 +30,7 @@ test_that("test create table",{
 test_that("test get.missingness", {
     cr <-
         ccRecord()+new.episode(list(NIHR_HIC_ICU_0108=data.frame(time=as.numeric(seq(100)),
-                                                       item2d=as.character(rep(10,100)))))
+                                                       val=as.character(rep(10,100)))))
     tb <- ccTable(record=cr, conf=yaml.load_file('../data/test_2yml.yml'))
     tb$create.table(freq=1)
     tb$conf[[1]][['missingness']][['labels']][['yellow']] <- 1

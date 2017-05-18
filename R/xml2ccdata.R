@@ -111,7 +111,7 @@ xmlEpisodeToList <- function(episode_node) {
                }
                else if (len == 2) { # 2d item (items in time)
                    nm <- c(.which.type(names(x)[1]), .which.type(names(x)[2]))
-                   label <- names(x)[nm == "item2d"]
+                   label <- names(x)[nm == "val"]
                    if (length(label) == 1) {
                        node_env$ccdata[[label]] <- .simple.data.frame(x)
                        names(node_env$ccdata[[label]]) <- nm
@@ -124,10 +124,10 @@ xmlEpisodeToList <- function(episode_node) {
                    
                    nm <- c(.which.type(names(x)[1]), .which.type(names(x)[2]),
                            .which.type(names(x)[3]))
-                   label <- names(x)[nm == "item2d"]
-                   # usually label, i.e. item2d should be unique, however just
+                   label <- names(x)[nm == "val"]
+                   # usually label, i.e. val should be unique, however just
                    # in case of incomplete 4-column data in which more than 1
-                   # item2d will be found.
+                   # val will be found.
                    for (i in label) {
                        node_env$ccdata[[i]] <- .simple.data.frame(x)
                        names(node_env$ccdata[[i]]) <- nm
@@ -142,7 +142,7 @@ xmlEpisodeToList <- function(episode_node) {
                else if (len == 4) {
                    nm <- c(.which.type(names(x)[1]), .which.type(names(x)[2]), 
                            .which.type(names(x)[3]), .which.type(names(x)[4]))
-                   label <- names(x)[nm == "item2d"]
+                   label <- names(x)[nm == "val"]
                    for(i in label) {
                        node_env$ccdata[[i]] <- data.frame(x[[1]], x[[2]],
                                                           x[[3]], x[[4]])

@@ -5,3 +5,7 @@ reallocateTime_ <- function(d, t_discharge, frequency) {
     .Call('cleanEHR_reallocateTime_', PACKAGE = 'cleanEHR', d, t_discharge, frequency)
 }
 
+reallocateTime__ <- function(d, t_admission, t_discharge, frequency) {
+    .Call('cleanEHR_reallocateTime__', PACKAGE = 'cleanEHR', d, t_admission, t_discharge, frequency)
+}
+

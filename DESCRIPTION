@@ -3,7 +3,7 @@ Type: Package
 Title: The Critical Care Clinical Data Processing Tools
 Version: 0.1
 Date: 2017-01-30
-Author: Sinan Shi, David Pérez-Suárez, Steve Harris, Niall MacCallum, David
+Author: Sinan Shi, David Perez-Suarez, Steve Harris, Niall MacCallum, David
     Brealey, Mervyn Singer, James Hetherington
 Maintainer: Sinan Shi <s.shi@ucl.ac.uk>
 Description: A toolset to deal with the Critical Care Health Informatics
@@ -27,7 +27,7 @@ Imports:
     ggplot2,
     pander,
     stats,
-    utils
+    utils 
 VignetteBuilder: knitr
 URL: https://github.com/CC-HIC/cleanEHR, http://www.hic.nihr.ac.uk
 RoxygenNote: 5.0.1
@@ -46,6 +46,7 @@ Collate:
     'pipeline.R'
     'reallocateTime.R'
     'selectTable.R'
+    'sql.R'
     'sql_demographic.R'
     'stdid.R'
     'summary.R'

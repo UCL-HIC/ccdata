@@ -42,7 +42,7 @@ episode.graph <- function(ccd, eid=601, items=NULL) {
         ltb <- rbindlist(ltb, use.names=T, fill=T)
         if (is.numeric(ltb$time))
             ltb$time <- t_ad + ltb$time * 60 * 60
-        ltb$item2d <- as.numeric(ltb$item2d)
+        ltb$val <- as.numeric(ltb$val)
         return(ltb)
     }
 
@@ -59,7 +59,7 @@ episode.graph <- function(ccd, eid=601, items=NULL) {
     tb <- rbindlist(list(physio.tb, drug.tb), fill=T, use.names=T)
 
 
-    ggp <- ggplot(tb, aes_string(x="time", y="item2d", group="item",
+    ggp <- ggplot(tb, aes_string(x="time", y="val", group="item",
                                  colour="catg2")) + geom_line(colour="#1E506C") + 
         geom_point(size=1) + 
         facet_grid(catg1 ~., scales="free_y") + 

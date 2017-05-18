@@ -262,26 +262,24 @@ NIHR_HIC_ICU_0058:
   NHICcode: NIHR_HIC_ICU_0058
   NHICdtCode: ~
   NHICmetaCode: ~
-  category:
-    levels:
-      "A": white British
-      "B": white Irish
-      "C": white any other
-      "D": mixed white and black Caribbean
-      "E": mixed white and black African
-      "F": mixed white and Asian
-      "G": mixed any other
-      "H": Asian or Asian British - Indian
-      "J": Asian or Asian British - Pakistani
-      "K": Asian or Asian British - Bangladeshi
-      "L": Asian or Asian British - any other
-      "M": black or black British - Caribbean
-      "N": black or black British - African
-      "P": black or black British - any other
-      "R": other ethnic group - Chinese
-      "S": any other ethnic group
-      "Z": not stated
-
+  levels:
+    'A': white British
+    'B': white Irish
+    'C': white any other
+    'D': mixed white and black Caribbean
+    'E': mixed white and black African
+    'F': mixed white and Asian
+    'G': mixed any other
+    'H': Asian or Asian British - Indian
+    'J': Asian or Asian British - Pakistani
+    'K': Asian or Asian British - Bangladeshi
+    'L': Asian or Asian British - any other
+    'M': black or black British - Caribbean
+    'N': black or black British - African
+    'P': black or black British - any other
+    'R': other ethnic group - Chinese
+    'S': any other ethnic group
+    'Z': not stated
 NIHR_HIC_ICU_0093:
   shortName: SEX
   ItemId: 13
@@ -304,11 +302,9 @@ NIHR_HIC_ICU_0093:
   NHICcode: NIHR_HIC_ICU_0093
   NHICdtCode: ~
   NHICmetaCode: ~
-  category:
-    levels:
-      "M": Male
-      "F": Female
-
+  levels:
+    'M': 'Male'
+    'F': 'Female'
 NIHR_HIC_ICU_0017:
   shortName: HCM
   ItemId: 14
@@ -353,6 +349,9 @@ NIHR_HIC_ICU_0018:
   NHICcode: NIHR_HIC_ICU_0018
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels: 
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0019:
   shortName: WKG
   ItemId: 16
@@ -595,12 +594,10 @@ NIHR_HIC_ICU_0930:
   NHICcode: NIHR_HIC_ICU_0930
   NHICdtCode: ~
   NHICmetaCode: ~
-  category:
-    levels:
-      A: Alive
-      D: Dead
-      E: Alive - not discharged
-
+  levels:
+    'A': Alive
+    'D': Dead
+    'E': Alive - not discharged
 NIHR_HIC_ICU_0085:
   shortName: RESA
   ItemId: 34
@@ -623,6 +620,14 @@ NIHR_HIC_ICU_0085:
   NHICcode: NIHR_HIC_ICU_0085
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'M': 'Home' 
+    'U': 'Nursing home or equivalent'  
+    'H': 'Health-related institution'  
+    'O': 'Non-health-related institution' 
+    'R': 'Residential place of work/education'  
+    'P': 'Hospice or equivalent'  
+    'N': 'No fixed address/abode or temporary abode'
 NIHR_HIC_ICU_0065:
   shortName: HLOCA
   ItemId: 35
@@ -645,6 +650,10 @@ NIHR_HIC_ICU_0065:
   NHICcode: NIHR_HIC_ICU_0065
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'S': 'Same hospital'
+    'A': 'Other acute hospital'
+    'O': 'Non-acute hospital'
 NIHR_HIC_ICU_0068:
   shortName: LOCA
   ItemId: 36
@@ -667,23 +676,21 @@ NIHR_HIC_ICU_0068:
   NHICcode: NIHR_HIC_ICU_0068
   NHICdtCode: ~
   NHICmetaCode: ~
-  category:
-    levels:
-      "W": Ward
-      "B": oBstetric area
-      "M": other interMediate care area
-      "P": Paediatric/neonatal ICU/HCU
-      "I": level 3 bed in adult ICU or ICU/HDU
-      "H": level 2 bed in adult ICU or ICU/HDU
-      "U": adUlt HCU
-      "T": Theatre & recovery
-      "E": accident & Emergency
-      "R": Recovery only
-      "G": imaGing department
-      "S": Specialist treatment area
-      "C": Clinic
-      "N": Not in hospital
-
+  levels:
+    W: Ward
+    B: oBstetric area
+    M: other interMediate care area
+    P: Paediatric/neonatal ICU/HCU
+    I: level 3 bed in adult ICU or ICU/HDU
+    H: level 2 bed in adult ICU or ICU/HDU
+    U: adUlt HCU
+    T: Theatre & recovery
+    E: accident & Emergency
+    R: Recovery only
+    G: imaGing department
+    S: Specialist treatment area
+    C: Clinic
+    'N': Not in hospital
 NIHR_HIC_ICU_0398:
   shortName: PA_V3
   ItemId: 37
@@ -706,6 +713,13 @@ NIHR_HIC_ICU_0398:
   NHICcode: NIHR_HIC_ICU_0398
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    L: unplanned Local admission
+    U: Unplanned transfer in
+    P: Planned transfer in
+    S: planned local Surgical admission
+    M: planned local Medical admission
+    R: Repatriation
 NIHR_HIC_ICU_0004:
   shortName: SCODE
   ItemId: 38
@@ -750,6 +764,11 @@ NIHR_HIC_ICU_0027:
   NHICcode: NIHR_HIC_ICU_0027
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    M: Emergency
+    U: Urgent
+    S: Scheduled
+    L: eLective
 NIHR_HIC_ICU_0007:
   shortName: CCL2D
   ItemId: 40
@@ -838,13 +857,21 @@ NIHR_HIC_ICU_0069:
   NHICcode: NIHR_HIC_ICU_0069
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'W': 'Ward'
+    'B': 'Obstetrics area'
+    'M': 'Other intermediate care area'
+    'R': 'Recovery only'
+    'P': 'Paediatric/neonatal ICU/HDU'
+    'I': 'Level 3 bed in adult ICU or ICU/HDU o H - Level 2 bed in adult ICU or ICU/HDU o U - Adult HDU'
+    'N': 'Not in hospital'
 NIHR_HIC_ICU_0405:
   shortName: TNESSD
   ItemId: 44
   Classification1: Demographic
   Classification2: Episode_descriptors
   Classification3: ICU_discharge
-  Classification4: Timeliness
+  Classification4: Timelines
   dataItem: Timeliness of discharge from your unit
   dateandtime: no
   Units: ~
@@ -860,6 +887,10 @@ NIHR_HIC_ICU_0405:
   NHICcode: NIHR_HIC_ICU_0405
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'F': 'Fully ready'
+    'D': 'Delayed'
+    'E': 'Early '
 NIHR_HIC_ICU_0066:
   shortName: LEVD
   ItemId: 45
@@ -904,12 +935,10 @@ NIHR_HIC_ICU_0097:
   NHICcode: NIHR_HIC_ICU_0097
   NHICdtCode: ~
   NHICmetaCode: ~
-  category:
-    levels:
-      A: Alive
-      D: Dead
-      E: Alive - not discharged
-
+  levels:
+    'A': 'Alive'
+    'D': 'Dead'
+    'E': 'Alive - not discharged'
 NIHR_HIC_ICU_0035:
   shortName: DOAH
   ItemId: 47
@@ -954,6 +983,10 @@ NIHR_HIC_ICU_0089:
   NHICcode: NIHR_HIC_ICU_0089
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'N': 'NHS'
+    'U': 'non-NHS, UK'
+    'O': 'non-UK'
 NIHR_HIC_ICU_0077:
   shortName: PLOCA
   ItemId: 49
@@ -976,6 +1009,21 @@ NIHR_HIC_ICU_0077:
   NHICcode: NIHR_HIC_ICU_0077
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    W: Ward
+    B: oBstetric area
+    M: other interMediate care area
+    P: Paediatric/neonatal ICU/HCU
+    I: level 3 bed in adult ICU or ICU/HDU
+    H: level 2 bed in adult ICU or ICU/HDU
+    U: adUlt HCU
+    T: Theatre & recovery
+    E: accident & Emergency
+    R: Recovery only
+    G: imaGing department
+    S: Specialist treatment area
+    C: Clinic
+    'N': Not in hospital
 NIHR_HIC_ICU_0100:
   shortName: TUADNO
   ItemId: 50
@@ -1064,6 +1112,18 @@ NIHR_HIC_ICU_0104:
   NHICcode: NIHR_HIC_ICU_0104
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'G': 'General'
+    'C': 'Cardiac'
+    'T': 'Thoracic'
+    'L': 'Liver'
+    'B': 'Burns & plastic'
+    'R': 'Renal'  
+    'N': 'Neurosciences'
+    'S': 'Spinal injury'
+    'M': 'Medical'
+    'U': 'Surgical'  
+    'O': 'Obstetric'
 NIHR_HIC_ICU_0013:
   shortName: TGA
   ItemId: 54
@@ -1086,6 +1146,9 @@ NIHR_HIC_ICU_0013:
   NHICcode: NIHR_HIC_ICU_0013
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1: 'Yes' 
+    0: 'No'
 NIHR_HIC_ICU_0031:
   shortName: CCA
   ItemId: 55
@@ -1108,6 +1171,13 @@ NIHR_HIC_ICU_0031:
   NHICcode: NIHR_HIC_ICU_0031
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'O': 'Unit outreach service only'  
+    'C': 'Unit outreach service & non-outreach staff combined'
+    'M': 'Unit medical staff (non-outreach service only)'  
+    'U': 'Unit nursing staff (non-outreach service only)'
+    'B': 'Both unit medical & nursing staff (non-outreach service only)'  
+    'N': 'No critical care visit prior to this admission to your unit'
 NIHR_HIC_ICU_0034:
   shortName: DLCCA
   ItemId: 56
@@ -1152,6 +1222,10 @@ NIHR_HIC_ICU_0057:
   NHICcode: NIHR_HIC_ICU_0057
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'S': 'Same hospital'   
+    'A': 'Other acute hospital'
+    'O': 'Non-acute hospital'
 NIHR_HIC_ICU_0090:
   shortName: SOHD
   ItemId: 58
@@ -1174,6 +1248,10 @@ NIHR_HIC_ICU_0090:
   NHICcode: NIHR_HIC_ICU_0090
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'N': 'NHS'
+    'U': 'non-NHS, UK'
+    'O': 'non-UK '
 NIHR_HIC_ICU_0568:
   shortName: TYPEIHD
   ItemId: 59
@@ -1196,6 +1274,18 @@ NIHR_HIC_ICU_0568:
   NHICcode: NIHR_HIC_ICU_0568
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'G': 'General'
+    'C': 'Cardiac'
+    'T': 'Thoracic'
+    'L': 'Liver' 
+    'S': 'Spinal injury'  
+    'B': 'Burns & plastic'  
+    'R': 'Renal'
+    'N': 'Neurosciences'
+    'M': 'Medical'
+    'U': 'Surgical'
+    'O': 'Obstetric'
 NIHR_HIC_ICU_0014:
   shortName: TGD
   ItemId: 60
@@ -1218,6 +1308,9 @@ NIHR_HIC_ICU_0014:
   NHICcode: NIHR_HIC_ICU_0014
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0095:
   shortName: HDIS
   ItemId: 61
@@ -1240,12 +1333,10 @@ NIHR_HIC_ICU_0095:
   NHICcode: NIHR_HIC_ICU_0095
   NHICdtCode: ~
   NHICmetaCode: ~
-  category:
-    levels:
-      A: Alive
-      D: Dead
-      E: Alive - not discharged
-
+  levels:
+    A: Alive
+    D: Dead
+    E: Alive - not discharged
 NIHR_HIC_ICU_0030:
   shortName: CCD
   ItemId: 62
@@ -1268,6 +1359,13 @@ NIHR_HIC_ICU_0030:
   NHICcode: NIHR_HIC_ICU_0030
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'O': 'Unit outreach service only'  
+    'C': 'Unit outreach service & non-outreach staff combined'
+    'M': 'Unit medical staff (non-outreach service only)'  
+    'U': 'Unit nursing staff (non-outreach service only)'
+    'B': 'Both unit medical & nursing staff (non-outreach service only)'  
+    'N': 'No critical care visit prior to this admission to your unit'
 NIHR_HIC_ICU_0407:
   shortName: DFCCD
   ItemId: 63
@@ -1334,6 +1432,14 @@ NIHR_HIC_ICU_0084:
   NHICcode: NIHR_HIC_ICU_0084
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'M': 'Home' 
+    'U': 'Nursing home or equivalent'  
+    'H': 'Health-related institution'  
+    'O': 'Non-health-related institution' 
+    'R': 'Residential place of work/education'  
+    'P': 'Hospice or equivalent'  
+    'N': 'No fixed address/abode or temporary abode'
 NIHR_HIC_ICU_0098:
   shortName: UHDIS
   ItemId: 66
@@ -1356,6 +1462,10 @@ NIHR_HIC_ICU_0098:
   NHICcode: NIHR_HIC_ICU_0098
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'A': 'Alive'
+    'D': 'Dead'
+    'E': 'Exporting data, still in hospital'
 NIHR_HIC_ICU_0011:
   shortName: PSP
   ItemId: 67
@@ -1378,6 +1488,9 @@ NIHR_HIC_ICU_0011:
   NHICcode: NIHR_HIC_ICU_0011
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0021:
   shortName: CPR_V3
   ItemId: 68
@@ -1488,6 +1601,9 @@ NIHR_HIC_ICU_0024:
   NHICcode: NIHR_HIC_ICU_0024
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0080:
   shortName: RADIOX
   ItemId: 73
@@ -1510,6 +1626,10 @@ NIHR_HIC_ICU_0080:
   NHICcode: NIHR_HIC_ICU_0080
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
+
 NIHR_HIC_ICU_0029:
   shortName: CICIDS
   ItemId: 74
@@ -1532,6 +1652,9 @@ NIHR_HIC_ICU_0029:
   NHICcode: NIHR_HIC_ICU_0029
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0010:
   shortName: AMLALLMM
   ItemId: 75
@@ -1554,6 +1677,9 @@ NIHR_HIC_ICU_0010:
   NHICcode: NIHR_HIC_ICU_0010
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0025:
   shortName: CMLCLL
   ItemId: 76
@@ -1576,6 +1702,9 @@ NIHR_HIC_ICU_0025:
   NHICcode: NIHR_HIC_ICU_0025
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0070:
   shortName: LYM
   ItemId: 77
@@ -1598,6 +1727,9 @@ NIHR_HIC_ICU_0070:
   NHICcode: NIHR_HIC_ICU_0070
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0071:
   shortName: META
   ItemId: 78
@@ -1620,6 +1752,9 @@ NIHR_HIC_ICU_0071:
   NHICcode: NIHR_HIC_ICU_0071
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0026:
   shortName: CRRX
   ItemId: 79
@@ -1642,6 +1777,9 @@ NIHR_HIC_ICU_0026:
   NHICcode: NIHR_HIC_ICU_0026
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0016:
   shortName: BPC
   ItemId: 80
@@ -1664,6 +1802,9 @@ NIHR_HIC_ICU_0016:
   NHICcode: NIHR_HIC_ICU_0016
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0060:
   shortName: HE
   ItemId: 81
@@ -1686,6 +1827,9 @@ NIHR_HIC_ICU_0060:
   NHICcode: NIHR_HIC_ICU_0060
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0075:
   shortName: PH
   ItemId: 82
@@ -1708,6 +1852,9 @@ NIHR_HIC_ICU_0075:
   NHICcode: NIHR_HIC_ICU_0075
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0062:
   shortName: AIDS_V3
   ItemId: 83
@@ -1752,6 +1899,9 @@ NIHR_HIC_ICU_0063:
   NHICcode: NIHR_HIC_ICU_0063
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0092:
   shortName: SRD
   ItemId: 85
@@ -1774,6 +1924,9 @@ NIHR_HIC_ICU_0092:
   NHICcode: NIHR_HIC_ICU_0092
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0099:
   shortName: STERX
   ItemId: 86
@@ -1796,6 +1949,9 @@ NIHR_HIC_ICU_0099:
   NHICcode: NIHR_HIC_ICU_0099
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0107:
   shortName: VSCD
   ItemId: 87
@@ -1818,6 +1974,9 @@ NIHR_HIC_ICU_0107:
   NHICcode: NIHR_HIC_ICU_0107
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0074:
   shortName: OCPMH
   ItemId: 88
@@ -1862,6 +2021,11 @@ NIHR_HIC_ICU_0055:
   NHICcode: NIHR_HIC_ICU_0055
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'A': 'Able to live without assistance in daily activities'
+    'N': 'Minor assistance with some daily activities' 
+    'J': 'Major assistance with majority of/all daily activities'
+    'T': 'Total assistance with all daily activities'
 NIHR_HIC_ICU_0409:
   shortName: apache_score
   ItemId: 90
@@ -1928,6 +2092,9 @@ NIHR_HIC_ICU_0053:
   NHICcode: NIHR_HIC_ICU_0053
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels: 
+    'T': 'Timely' 
+    'D': 'Delayed'
 NIHR_HIC_ICU_0054:
   shortName: DHRS
   ItemId: 93
@@ -1972,6 +2139,9 @@ NIHR_HIC_ICU_0015:
   NHICcode: NIHR_HIC_ICU_0015
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0009:
   shortName: ORGAN_SUPPORT
   ItemId: 95
@@ -2016,6 +2186,10 @@ NIHR_HIC_ICU_0087:
   NHICcode: NIHR_HIC_ICU_0087
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    'Y': 'Yes' 
+    'N': 'No'
+    'A': 'Not approached'
 NIHR_HIC_ICU_0086:
   shortName: BRSD
   ItemId: 97
@@ -2280,6 +2454,9 @@ NIHR_HIC_ICU_0400:
   NHICcode: NIHR_HIC_ICU_0400
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels: 
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0044:
   shortName: DDBSD
   ItemId: 109
@@ -2390,6 +2567,9 @@ NIHR_HIC_ICU_0082:
   NHICcode: NIHR_HIC_ICU_0082
   NHICdtCode: ~
   NHICmetaCode: ~
+  levels:
+    1:'Yes' 
+    0:'No'
 NIHR_HIC_ICU_0094:
   shortName: OD_V3
   ItemId: 114
@@ -2811,9 +2991,8 @@ NIHR_HIC_ICU_0108:
   range:
     labels:
       red: (0, 300)
-      amber: (11, 170) 
+      amber: (11, 170)
       green: (60, 100)
-
 NIHR_HIC_ICU_0109:
   shortName: h_rhythm
   ItemId: 133
@@ -3144,6 +3323,9 @@ NIHR_HIC_ICU_0144:
   NHICcode: NIHR_HIC_ICU_0144
   NHICdtCode: NIHR_HIC_ICU_0281
   NHICmetaCode: ~
+  levels:
+    '1': invasive ventilation
+    '2': non-invasive ventilation
 NIHR_HIC_ICU_0549:
   shortName: respiratory_rate_spon
   ItemId: 148
@@ -3409,7 +3591,7 @@ NIHR_HIC_ICU_0153:
   NHICdtCode: NIHR_HIC_ICU_0290
   NHICmetaCode: ~
 NIHR_HIC_ICU_0154:
-  shortName: cycle_volumn
+  shortName: cycle_volume
   ItemId: 160
   Classification1: Physiology
   Classification2: Respiratory
@@ -3562,6 +3744,9 @@ NIHR_HIC_ICU_0161:
   NHICcode: NIHR_HIC_ICU_0161
   NHICdtCode: NIHR_HIC_ICU_0298
   NHICmetaCode: ~
+  levels:
+    '1': CVVHF
+    '2': CVVHDF
 NIHR_HIC_ICU_0552:
   shortName: duration_therapy
   ItemId: 167
@@ -3723,7 +3908,7 @@ NIHR_HIC_ICU_0142:
   Classification2: Temperature
   Classification3: Non_central
   Classification4: ~
-  dataItem: Temperature - Non-central
+  dataItem: Temperature-Non-central
   dateandtime: yes
   Units: degree Celcius
   Datatype: numeric
@@ -3750,7 +3935,7 @@ NIHR_HIC_ICU_0168:
   Units: mmol/l
   Datatype: numeric
   Template: 999
-  Reference_ranges: 135 - 145
+  Reference_ranges: 135-145
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -3772,7 +3957,7 @@ NIHR_HIC_ICU_0169:
   Units: mmol/l
   Datatype: numeric
   Template: 999
-  Reference_ranges: 135 - 148
+  Reference_ranges: 135-148
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -3794,7 +3979,7 @@ NIHR_HIC_ICU_0171:
   Units: mmol/l
   Datatype: numeric
   Template: 99.9
-  Reference_ranges: 3.5 - 5.1
+  Reference_ranges: 3.5-5.1
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -3816,7 +4001,7 @@ NIHR_HIC_ICU_0172:
   Units: mmol/l
   Datatype: numeric
   Template: 99.9
-  Reference_ranges: 3.5 - 4.5
+  Reference_ranges: 3.5-4.5
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -3838,7 +4023,7 @@ NIHR_HIC_ICU_0164:
   Units: mmol/l
   Datatype: numeric
   Template: 99.9
-  Reference_ranges: 1.7 - 8.3
+  Reference_ranges: 1.7-8.3
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -3860,7 +4045,7 @@ NIHR_HIC_ICU_0166:
   Units: umol/l
   Datatype: numeric
   Template: 9999
-  Reference_ranges: 66 - 112
+  Reference_ranges: 66-112
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -3882,7 +4067,7 @@ NIHR_HIC_ICU_0174:
   Units: umol/l
   Datatype: numeric
   Template: 999
-  Reference_ranges: 0 - 20
+  Reference_ranges: 0-20
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -3926,7 +4111,7 @@ NIHR_HIC_ICU_0175:
   Units: mmol/l
   Datatype: numeric
   Template: 99.9
-  Reference_ranges: 3.3 - 6.1
+  Reference_ranges: 3.3-6.1
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -3948,7 +4133,7 @@ NIHR_HIC_ICU_0176:
   Units: mmol/l
   Datatype: numeric
   Template: 99.9
-  Reference_ranges: 0.6 - 33.3 (operating range)
+  Reference_ranges: 0.6-33.3 (operating range)
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -3987,7 +4172,7 @@ NIHR_HIC_ICU_0136:
   Classification2: Chemistry
   Classification3: Acid_base
   Classification4: pH
-  dataItem: pH - ABG / VBG
+  dataItem: pH-ABG / VBG
   dateandtime: yes
   Units: ~
   Datatype: numeric
@@ -4009,12 +4194,12 @@ NIHR_HIC_ICU_0138:
   Classification2: Chemistry
   Classification3: Acid_base
   Classification4: HCO3
-  dataItem: HCO3 - ABG / VBG
+  dataItem: HCO3-ABG / VBG
   dateandtime: yes
   Units: mmol/l
   Datatype: numeric
   Template: 99.9
-  Reference_ranges: 21 - 28
+  Reference_ranges: 21-28
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -4031,12 +4216,12 @@ NIHR_HIC_ICU_0122:
   Classification2: Chemistry
   Classification3: Lactate
   Classification4: Lactate_blood_gas
-  dataItem: Lactate - ABG
+  dataItem: Lactate-ABG
   dateandtime: yes
   Units: mmol/l
   Datatype: numeric
   Template: 99.9
-  Reference_ranges: 0.4 - 2.2
+  Reference_ranges: 0.4-2.2
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -4053,12 +4238,12 @@ NIHR_HIC_ICU_0123:
   Classification2: Chemistry
   Classification3: Lactate
   Classification4: Lactate_laboratory
-  dataItem: Lactate - Lab
+  dataItem: Lactate-Lab
   dateandtime: yes
   Units: mmol/l
   Datatype: numeric
   Template: 99.9
-  Reference_ranges: 0.5 - 2.2
+  Reference_ranges: 0.5-2.2
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -4080,7 +4265,7 @@ NIHR_HIC_ICU_0179:
   Units: g/l
   Datatype: numeric
   Template: 999
-  Reference_ranges: 115 - 174
+  Reference_ranges: 115-174
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -4102,7 +4287,7 @@ NIHR_HIC_ICU_0178:
   Units: g/l
   Datatype: numeric
   Template: 999
-  Reference_ranges: 130 - 170
+  Reference_ranges: 130-170
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -4124,7 +4309,7 @@ NIHR_HIC_ICU_0182:
   Units: x10^9/L
   Datatype: numeric
   Template: 99.9
-  Reference_ranges: 3.0 - 10.0
+  Reference_ranges: 3.0-10.0
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -4146,7 +4331,7 @@ NIHR_HIC_ICU_0183:
   Units: x10^9/L
   Datatype: numeric
   Template: 99.9
-  Reference_ranges: 2.0 - 7.5
+  Reference_ranges: 2.0-7.5
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -4168,7 +4353,7 @@ NIHR_HIC_ICU_0184:
   Units: x10^9/L
   Datatype: numeric
   Template: 999
-  Reference_ranges: 150 - 400
+  Reference_ranges: 150-400
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -4251,12 +4436,12 @@ NIHR_HIC_ICU_0132:
   Classification2: Respiratory
   Classification3: Gases
   Classification4: Oxygenation
-  dataItem: PaO2 - ABG
+  dataItem: PaO2-ABG
   dateandtime: yes
   Units: kPa
   Datatype: numeric
   Template: 99.9
-  Reference_ranges: 10.67 - 13.33
+  Reference_ranges: 10.67-13.33
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -4273,7 +4458,7 @@ NIHR_HIC_ICU_0130:
   Classification2: Respiratory
   Classification3: Gases
   Classification4: Oxygenation
-  dataItem: SaO2 - ABG
+  dataItem: SaO2-ABG
   dateandtime: yes
   Units: percent
   Datatype: numeric
@@ -4317,12 +4502,12 @@ NIHR_HIC_ICU_0134:
   Classification2: Respiratory
   Classification3: Gases
   Classification4: Carbon_dioxide
-  dataItem: PaCO2 - ABG
+  dataItem: PaCO2-ABG
   dateandtime: yes
   Units: kPa
   Datatype: numeric
   Template: 99.9
-  Reference_ranges: 4.67 - 6.00
+  Reference_ranges: 4.67-6.00
   UCHsource: ICIP
   Timing: within 30 min of input
   ICNARC_Fieldname: ~
@@ -4443,7 +4628,7 @@ NIHR_HIC_ICU_0447:
   NHICdtCode: NIHR_HIC_ICU_0351
   NHICmetaCode: NIHR_HIC_ICU_0953
 NIHR_HIC_ICU_0434:
-  shortName: ethambutal hcl
+  shortName: ethambutal_hcl
   ItemId: 207
   Classification1: Drugs
   Classification2: Anti_microbials
@@ -4729,7 +4914,7 @@ NIHR_HIC_ICU_0422:
   NHICdtCode: NIHR_HIC_ICU_0326
   NHICmetaCode: NIHR_HIC_ICU_0567
 NIHR_HIC_ICU_0436:
-  shortName: fuscidic acid
+  shortName: fuscidic_acid
   ItemId: 220
   Classification1: Drugs
   Classification2: Anti_microbials
@@ -4751,7 +4936,7 @@ NIHR_HIC_ICU_0436:
   NHICdtCode: NIHR_HIC_ICU_0340
   NHICmetaCode: NIHR_HIC_ICU_0579
 NIHR_HIC_ICU_0456:
-  shortName: sodium fusidate
+  shortName: sodium_fusidate
   ItemId: 221
   Classification1: Drugs
   Classification2: Anti_microbials
@@ -5015,7 +5200,7 @@ NIHR_HIC_ICU_0417:
   NHICdtCode: NIHR_HIC_ICU_0321
   NHICmetaCode: NIHR_HIC_ICU_0562
 NIHR_HIC_ICU_0426:
-  shortName: co-amoxiclav
+  shortName: co_amoxiclav
   ItemId: 233
   Classification1: Drugs
   Classification2: Anti_microbials
@@ -5213,7 +5398,7 @@ NIHR_HIC_ICU_0446:
   NHICdtCode: NIHR_HIC_ICU_0350
   NHICmetaCode: NIHR_HIC_ICU_0581
 NIHR_HIC_ICU_0428:
-  shortName: co-trimoxazole
+  shortName: co_trimoxazole
   ItemId: 242
   Classification1: Drugs
   Classification2: Anti_microbials
@@ -5257,7 +5442,7 @@ NIHR_HIC_ICU_0460:
   NHICdtCode: NIHR_HIC_ICU_0364
   NHICmetaCode: NIHR_HIC_ICU_0963
 NIHR_HIC_ICU_0429:
-  shortName: demeclocycline hcl
+  shortName: demeclocycline_hcl
   ItemId: 244
   Classification1: Drugs
   Classification2: Anti_microbials

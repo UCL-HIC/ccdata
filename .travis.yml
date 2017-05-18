@@ -12,6 +12,7 @@ r_packages:
   - XML
   - yaml
   - covr
+  - dplyr
 
 script:
   - Rscript -e 'library(devtools); checkOutput <- data.frame(test()); if (sum(checkOutput["failed"]) + sum(checkOutput[["error"]]) > 0){q(status = 1, save = "no")}'

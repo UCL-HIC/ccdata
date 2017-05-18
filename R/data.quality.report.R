@@ -302,8 +302,8 @@ table1 <- function(demg, names, return.data=FALSE) {
         if (!return.data)
             cat(paste("\n###", ref$dataItem," - ", hicnum, "\n"))
         if (ref$Datatype %in% c("text", "list", "Logical", "list / Logical")) {
-            stopifnot(!is.null(ref$category))
-            nmref <- sapply(ref$category$levels, function(x) x)
+            stopifnot(!is.null(ref$levels))
+            nmref <- sapply(ref$levels, function(x) x)
             r <- demg[, .N, by=name]
             level.name <- nmref[r[[name]]]
             r[, "nm":=level.name]

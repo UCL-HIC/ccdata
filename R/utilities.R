@@ -22,7 +22,7 @@ extractIndexTable <- function() {
     for(i in seq(info$time$idt))
         checklist[[info$time$idt[i]]] <-"time"
     for(i in seq(info$time$id))
-        checklist[[info$time$id[i]]] <- "item2d"
+        checklist[[info$time$id[i]]] <- "val"
     for(i in seq(info$meta$meta))
         checklist[[info$meta$meta[i]]] <- "meta"
     
@@ -125,13 +125,33 @@ lookup.items <- function(keyword, style="grid") {
     stn <- unique(names(stname2longname.dict[c(index1, index2, index3)]))
     query_item_ref <- function(stn, field)
         unlist(sapply(ITEM_REF[stname2code(stn)], 
-                      function(x) ifelse(is.null(x[[field]]), "N/A", x[[field]])))
+                      function(x) {
+                          ifelse(is.null(x[[field]]), "N/A", x[[field]])
+                      }))
+
+    query_item_levels <- function(stn) {
+        txtv <- vector()
+        for(s in stn) {
+            i <- ITEM_REF[[stname2code(s)]][['levels']]
+            if (is.null(i))
+                txtv <- c(txtv, "N/A")
+            else {
+                nms <- names(i)
+                txt <- ""
+                for(j in seq(i)) 
+                    txt <- paste0(txt, "[", nms[j],"]: ", i[j], "\n")
+                txtv <- c(txtv, txt)
+            }
+        }
+        return(txtv)
+    }
 
     tb <- data.frame("NHIC Code"=stname2code(stn), 
                "Short Name"=stn, 
                "Long Name"=stname2longname(stn), 
                "Unit"=query_item_ref(stn, "Units"), 
-               "Data type"=query_item_ref(stn, "Datatype")) 
+               "Data type"=query_item_ref(stn, "Datatype"),
+               "Levels"=query_item_levels(stn))
     rownames(tb) <- NULL
     pander(tb, style=style, split.table = Inf)
     invisible(tb[, 2])
