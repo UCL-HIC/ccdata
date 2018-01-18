@@ -6,12 +6,12 @@ Author: Sinan Shi, David Perez-Suarez, Steve Harris, Niall MacCallum, David
     Brealey, Mervyn Singer, James Hetherington
 Maintainer: Sinan Shi <s.shi@ucl.ac.uk>
 Description: An electronic health care record (EHR) data cleaning and processing
-    platform. It focus on heterogeneous high resolution longitudinal data. It works with 
-    Critical Care Health Informatics Collaborative (CCHIC) dataset. It is
-    created to address various data reliability and accessibility problems of
-    EHRs as such. 
+    platform. It focus on heterogeneous high resolution longitudinal data. It works
+    with Critical Care Health Informatics Collaborative (CCHIC) dataset. It is
+    created to address various data reliability and accessibility problems of EHRs
+    as such.
 Depends:
-    R (>= 3.1.0) 
+    R (>= 3.1.0)
 BugReports: https://github.com/CC-HIC/cleanEHR/issues
 License: GPL-3
 LinkingTo: Rcpp
@@ -19,11 +19,13 @@ Suggests:
     testthat
 Imports:
     data.table,
+    dplyr,
     XML,
     yaml,
     Rcpp,
+    magrittr,
     ggplot2,
-    methods, 
+    methods,
     pander,
     knitr
 VignetteBuilder: knitr
@@ -36,6 +38,7 @@ Collate:
     'cchic_xml.R'
     'data.R'
     'data.quality.report.R'
+    'dbConnection.R'
     'deltaTime.R'
     'demographics.R'
     'filter.categorical.R'

@@ -49,12 +49,15 @@ You request access to the anonymised toy dataset from
 
 ## Required packages
 * R (>= 3.1.0),
-* XML,
 * data.table,
-* yaml,
+* dbplyr,
+* dplyr,
+* methods,
 * pander,
 * Rcpp,
-* methods
+* RPostgreSQL,
+* XML,
+* yaml
 
 
 ## How to install the R package
