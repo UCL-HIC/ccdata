@@ -3,3 +3,5 @@ Makefile
 .travis.yml
 appveyor.yml
 paper.md
+^.*\.Rproj$
+^\.Rproj\.user$

@@ -452,9 +452,17 @@ getEpisodePeriod <- function (e, unit="hours") {
     # The failure of POSIX conversion indicates that this episode is either 
     # anonymised or has a missing or incorrect value of discharge or admission
     # time. 
-    if (is.na(tadm) || is.na(tdisc))
-        period_length <- findMaxTime(e)
-    else {
+    if (is.na(tdisc)) {
+      if (is.null(findMaxTime(e))) {
+        period_length <- 0
+      } else {
+        period_length <- ceiling(
+          as.numeric(
+            difftime(
+              as.POSIXct.numeric(findMaxTime(e), origin = "1970-01-01 00:00:00"), tadm, units = unit)
+          ))
+      }
+    } else {
         if (any(is.null(tdisc), is.null(tadm)))
             period_length <- NULL
         else
@@ -466,6 +474,8 @@ getEpisodePeriod <- function (e, unit="hours") {
         if (period_length == 0)
             period_length <- period_length + 1
     }
+    
+    
 
     if (is.null(period_length))
         warning("This episode does not have any time series data: ", 
