@@ -374,7 +374,7 @@ create2dclean <- function(record, config, freq=1, nchunks=1) {
     if (is.character(config))
         config <- yaml.load_file(config)
 
-    stopifnot(nchunks > 0 & nchunks < record@nepisodes)
+    stopifnot(nchunks > 0 & (nchunks < record@nepisodes | nchunks == 1))
 
     if (nchunks == 1)
         return(.create2dclean(record, config, freq)$tclean)
